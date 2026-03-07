@@ -1,15 +1,11 @@
 const BASE_URL = "http://127.0.0.1:8000";
-
+import { Hospital } from "../types";
 export interface TrainRoundResponse {
   round: number;
   global_accuracy: number;
   txHash: string;
   model_hash?: string;
-  hospitals: {
-    id: string;
-    accuracy: number;
-    samples: number;
-  }[];
+  hospitals: Hospital[];
 }
 
 export async function trainRound(wallet: string): Promise<TrainRoundResponse> {
