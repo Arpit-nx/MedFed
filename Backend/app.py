@@ -43,6 +43,7 @@ class TrainRequest(BaseModel):
     wallet: str
 
 @app.post("/train_round")
+@app.post("/train_round/")
 def train_round(request: TrainRequest):
     global current_round
     current_round += 1
@@ -124,6 +125,7 @@ def train_round(request: TrainRequest):
     }
 
 @app.post("/train_multiple/{rounds}")
+@app.post("/train_multiple/{rounds}/")
 def train_multiple(rounds: int, request: TrainRequest):
     results = []
     for _ in range(rounds):
