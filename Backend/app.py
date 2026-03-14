@@ -12,7 +12,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",   # Vite dev server
+        "http://localhost:5173",
         "https://medfed.onrender.com"
     ],
     allow_credentials=True,
