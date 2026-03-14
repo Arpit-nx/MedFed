@@ -1,4 +1,4 @@
-const BASE_URL = "http://127.0.0.1:8000";
+const BASE_URL = "http://medfed.onrender.com";
 import { Hospital } from "../types";
 export interface TrainRoundResponse {
   round: number;
