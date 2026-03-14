@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from '../components/Nav'
 import HeroSection from '../components/HeroSection'
 import ArchitectureSection from '../components/ArchitectureSection'
-import WorkflowSection from '@/components/WorkFlowSection'
+import WorkflowSection from '@/components/WorkflowSection'
 import SecuritySection from '@/components/SecuritySection'
 import FooterCTA from '@/components/FooterCTA'
 
