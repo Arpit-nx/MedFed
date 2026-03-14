@@ -13,7 +13,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://medfed.onrender.com"
+        "https://medfed.onrender.com",
         "https://medfed.vercel.app"
     ],
     allow_credentials=True,
