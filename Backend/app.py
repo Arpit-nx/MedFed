@@ -42,6 +42,10 @@ current_round = 0
 class TrainRequest(BaseModel):
     wallet: str
 
+@app.get("/")
+def health():
+    return {"status": "MedFed backend running"}
+
 @app.post("/train_round")
 @app.post("/train_round/")
 def train_round(request: TrainRequest):
